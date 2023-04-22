@@ -5,21 +5,21 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   providedIn: 'root',
 })
 export class SnackbarService {
-  constructor(private snakcbar: MatSnackBar) {}
+  constructor(private snackbar: MatSnackBar) {}
 
   openSnackbar(message: string, action: string) {
     if (action === 'error') {
-      this.snakcbar.open(message, '', {
+      this.snackbar.open(message, '', {
         horizontalPosition: 'center',
         verticalPosition: 'top',
-        duration: 5000,
+        duration: 2000,
         panelClass: ['black-snackbar'],
       });
     } else {
-      this.snakcbar.open(message, '', {
+      this.snackbar.open(message, '', {
         horizontalPosition: 'center',
         verticalPosition: 'top',
-        duration: 5000,
+        duration: 2000,
         panelClass: ['green-snackbar'],
       });
     }
