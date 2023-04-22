@@ -19,6 +19,7 @@ import { TokenInterceptorInterceptor } from './services/token-interceptor.interc
 import { MaterialModule } from './shared/material-module';
 import { SharedModule } from './shared/shared.module';
 import { SignupComponent } from './signup/signup.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 const ngxUiLoaderConfig: NgxUiLoaderConfig = {
   text: "Carregando...",
@@ -48,6 +49,7 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig = {
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
+    MatFormFieldModule,
     ReactiveFormsModule,
     MaterialModule,
     FlexLayoutModule,
