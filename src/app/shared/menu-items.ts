@@ -13,7 +13,8 @@ const MENUITEMS = [
   {state:'dashboard' , name:'Dashboard', type:'link', icon:'dashboard', role:''},
   {state:'category' , name:'Gerenciar Categorias', type:'link', icon:'category', role:'admin'},
   {state:'product' , name:'Gerenciar Produtos', type:'link', icon:'inventory_2', role:'admin'},
-  {state:'order' , name:'Gerenciar Pedidos', type:'link', icon:'shopping_cart', role:''},
+  {state:'order' , name:'Gerar Pedidos', type:'link', icon:'shopping_cart', role:''},
+  {state:'bill' , name:'Visualizar Pedidos', type:'link', icon:'backup_table', role:''},
 ]
 @Injectable()
 export class MenuItems{
