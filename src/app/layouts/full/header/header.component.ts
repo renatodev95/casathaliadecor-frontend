@@ -20,7 +20,7 @@ export class AppHeaderComponent {
       confirmation: true,
     };
     const dialogRef = this.dialog.open(ConfirmationComponent, dialogConfig);
-    const sub = dialogRef.componentInstance.onEmtStatusChange.subscribe(
+    const sub = dialogRef.componentInstance.onEmitStatusChange.subscribe(
       (response) => {
         dialogRef.close();
         localStorage.clear();
